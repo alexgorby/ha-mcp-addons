@@ -1,16 +1,18 @@
 {
-    "name": "MCP Filesystem Server",
-    "version": "1.0.0",
-    "slug": "mcp_filesystem",
-    "description": "Filesystem MCP server with access to /config for Home Assistant",
-    "startup": "services",
-    "boot": "auto",
-    "ports": {
-      "8765/tcp": 8765
-    },
-    "map": [
-      "config:rw"
-    ],
-    "options": {},
-    "schema": {}
-  }
+  "name": "MCP Filesystem Server",
+  "version": "1.0.0",
+  "slug": "mcp_filesystem",
+  "description": "Filesystem MCP server with access to /config for Home Assistant",
+  "startup": "services",
+  "boot": "auto",
+  "arch": ["amd64", "aarch64", "armv7"],
+  "build": {},
+  "ports": {
+    "8765/tcp": 8765
+  },
+  "map": [
+    "config:rw"
+  ],
+  "options": {},
+  "schema": {}
+}
