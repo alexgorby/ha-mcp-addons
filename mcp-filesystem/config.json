@@ -1,6 +1,6 @@
 {
   "name": "MCP Filesystem Server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "slug": "mcp_filesystem",
   "description": "Filesystem MCP server with access to /config for Home Assistant",
   "startup": "services",
