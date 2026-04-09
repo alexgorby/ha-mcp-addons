@@ -6,12 +6,19 @@
   "startup": "services",
   "boot": "auto",
   "arch": ["amd64", "aarch64", "armv7"],
-  "build": {},
   "ports": {
     "8765/tcp": 8765
   },
   "map": [
     "config:rw"
+  ],
+  "command": "node",
+  "args": [
+    "/usr/local/lib/node_modules/@modelcontextprotocol/server-filesystem/dist/index.js",
+    "--port",
+    "8765",
+    "--root",
+    "/config"
   ],
   "options": {},
   "schema": {}
