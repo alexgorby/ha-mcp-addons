@@ -1,0 +1,16 @@
+{
+    "name": "MCP Filesystem Server",
+    "version": "1.0.0",
+    "slug": "mcp_filesystem",
+    "description": "Filesystem MCP server with access to /config for Home Assistant",
+    "startup": "services",
+    "boot": "auto",
+    "ports": {
+      "8765/tcp": 8765
+    },
+    "map": [
+      "config:rw"
+    ],
+    "options": {},
+    "schema": {}
+  }
