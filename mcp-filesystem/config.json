@@ -1,25 +1,23 @@
 {
-  "name": "MCP Filesystem Server",
-  "version": "1.0.1",
+  "name": "MCP Filesystem",
+  "version": "1.0.0",
   "slug": "mcp_filesystem",
-  "description": "Filesystem MCP server with access to /config for Home Assistant",
+  "description": "MCP Filesystem Server",
   "startup": "services",
   "boot": "auto",
-  "arch": ["amd64", "aarch64", "armv7"],
+
+  "arch": ["amd64", "aarch64"],
+
+  "init": false,
+
   "ports": {
     "8765/tcp": 8765
   },
+
   "map": [
     "config:rw"
   ],
-  "command": "node",
-  "args": [
-    "/usr/local/lib/node_modules/@modelcontextprotocol/server-filesystem/dist/index.js",
-    "--port",
-    "8765",
-    "--root",
-    "/config"
-  ],
+
   "options": {},
   "schema": {}
 }
